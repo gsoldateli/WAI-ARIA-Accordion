@@ -1,5 +1,5 @@
-# WAI-ARIA-Accordion
-An WAI-ARIA Accordion component which can be handled by keyboar.
+# WAI-ARIA-Accordion [(Live example)](http://wai-aria-accordion.surge.sh/)
+An WAI-ARIA Accordion component which can be handled by keyboard.
 
 * ### Keyboard Actions:
 	* → | ↓ = Moves the tab down
