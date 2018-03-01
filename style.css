@@ -1,0 +1,39 @@
+.container  {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion {
+    max-width: 30em;
+    font-family: sans-serif;
+    border: 2px solid #6A88DD;
+}
+
+.accordion-heading {
+    border-bottom: 2px solid #6A88DD;
+    margin: 0;
+    padding: .25em .5em;
+}
+.accordion-heading[aria-selected='true'],
+.accordion-heading:focus {
+    background-color: #ccc;
+}
+
+h3[aria-selected='false']:last-of-type {
+    border-bottom: none;
+}
+
+.accordion-panel {
+    border-bottom: 2px solid #6A88DD;
+    padding: .25em .5em;
+    min-height: 10em;
+}
+
+.accordion-panel:last-child {
+    border-bottom: none;
+}
+
+div[aria-hidden='true'] {
+    display: none;
+}
+

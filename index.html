@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARIA Accordion</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <h1>
+            WAI-ARIA Accordion.
+        </h1>
+        <p>
+            → | ↓ = Moves the tab down
+        </p>
+        <p>
+            ← | ↑ = Moves the tab up
+        </p>
+        <p>
+            Enter | Spacebar = Togles tab on/of
+        </p>
+        
+        <div class="accordion" role="tablist">
+            <h3 id="heading1" class="accordion-heading" tabindex="1" role="tab" aria-controls="panel1" aria-owns="panel1" aria-selected="true">
+            Heading 1
+            </h3>
+            
+            <div id="panel1" aria-hidden="false" role="region" aria-labelledby="heading1" class="accordion-panel" aria-expanded="true">Content for panel 1</div>
+
+            
+
+
+            <!-- ACC 2 -->
+            <h3 id="heading2" role="tab" class="accordion-heading" tabindex="2" aria-selected="false" aria-controls="panel2" aria-owns="panel2">
+            Heading 2
+            </h3>
+            <div id="panel2" role="region" aria-hidden="true" aria-labelledby="heading2" class="accordion-panel" aria-expanded="false">Content for panel 2</div>
+            
+
+
+
+
+            <!-- ACC 3 -->
+            <h3 id="heading3" role="tab" class="accordion-heading" tabindex="3" aria-selected="false" aria-controls="panel3" aria-owns="panel3">
+            Heading 3
+            </h3>
+            <div id="panel3" role="region" aria-hidden="true" aria-labelledby="heading3" class="accordion-panel" aria-expanded="false">Content for panel 3</div>
+            
+            <!-- ACC 4 -->
+            <h3 id="heading4" role="tab" class="accordion-heading" tabindex="4" aria-selected="false" aria-controls="panel4" aria-owns="panel4">
+            Heading 4
+            </h3>
+            <div id="panel4" role="region" aria-hidden="true" aria-labelledby="heading4" class="accordion-panel" aria-expanded="false">Content for panel 4</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
